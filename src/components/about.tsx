@@ -8,9 +8,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center py-40 px-6 md:px-24 w-full bg-white text-neutral relative overflow-hidden scroll-mt-24"
+      className="min-h-[100svh] flex flex-col justify-center py-20 md:py-40 px-4 xs:px-6 md:px-24 w-full bg-white text-neutral relative overflow-hidden scroll-mt-24"
     >
-      <div className="absolute top-10 right-10 text-[15rem] font-goldman opacity-[0.03] select-none pointer-events-none">
+      <div className="absolute top-10 right-10 text-[7rem] xs:text-[10rem] md:text-[15rem] font-goldman opacity-[0.03] select-none pointer-events-none">
         01
       </div>
 
@@ -21,7 +21,7 @@ export default function About() {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className="text-8xl md:text-[10rem] font-goldman leading-none tracking-tighter mb-12"
+            className="text-5xl xs:text-6xl md:text-8xl lg:text-[10rem] font-goldman leading-none tracking-tighter mb-12"
           >
             WHO <br /> AM I?
           </motion.h2>
@@ -42,7 +42,7 @@ export default function About() {
         </div>
 
         {/* Content */}
-        <div className="lg:col-span-8 flex flex-col justify-center h-full pt-12">
+        <div className="lg:col-span-8 flex flex-col justify-center h-full pt-4 md:pt-12">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -50,11 +50,11 @@ export default function About() {
             viewport={{ once: true }}
             className="max-w-4xl"
           >
-            <h3 className="text-4xl md:text-6xl font-goldman mb-8 text-secondary uppercase">
+            <h3 className="text-2xl xs:text-3xl md:text-4xl lg:text-6xl font-goldman mb-8 text-secondary uppercase">
               {general.name} / {general.nickname}
             </h3>
 
-            <div className="space-y-12 text-2xl md:text-4xl font-opensans leading-tight text-neutral/80">
+            <div className="space-y-8 md:space-y-12 text-lg xs:text-xl md:text-2xl lg:text-4xl font-opensans leading-tight text-neutral/80">
               {description.map((item, index) => (
                 <p key={index} className="relative group">
                   <span className="relative z-10">{item}</span>
@@ -68,18 +68,18 @@ export default function About() {
               ))}
             </div>
 
-            <div className="mt-20 pt-20 border-t border-neutral/10 grid grid-cols-1 md:grid-cols-2 gap-12 font-goldman">
+            <div className="mt-12 md:mt-20 pt-12 md:pt-20 border-t border-neutral/10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 font-goldman">
               <div>
                 <p className="text-xs uppercase tracking-widest text-neutral/40 mb-2">
                   Location
                 </p>
-                <p className="text-2xl">Da Nang, Vietnam</p>
+                <p className="text-xl xs:text-2xl">Da Nang, Vietnam</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-neutral/40 mb-2">
                   Current Job
                 </p>
-                <p className="text-2xl">Luviha Solutions</p>
+                <p className="text-xl xs:text-2xl">Luviha Solutions</p>
               </div>
             </div>
           </motion.div>

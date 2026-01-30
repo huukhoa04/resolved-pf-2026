@@ -14,7 +14,7 @@ export default function App() {
     <>
       <div className="bg-neutral min-h-screen text-white accent-accent selection:bg-accent selection:text-neutral relative">
         {/* Parallax Background for HERO ONLY */}
-        <div className="absolute top-0 left-0 right-0 z-0 h-screen overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-0 right-0 z-0 h-[100svh] overflow-hidden pointer-events-none">
           <motion.div
             className="absolute inset-0 w-full h-[120%] bg-cover bg-center grayscale opacity-10"
             style={{

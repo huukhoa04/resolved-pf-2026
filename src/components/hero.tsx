@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative h-screen min-h-200 flex items-center justify-center overflow-hidden w-full bg-neutral"
+      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden w-full bg-neutral py-20 px-4 md:px-0"
     >
       {/* Background Decorative Large Text */}
       <div className="absolute inset-0 flex items-center justify-center select-none pointer-events-none overflow-hidden">
@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 1.2 }}
           animate={{ opacity: 0.05, scale: 1 }}
           transition={{ duration: 2 }}
-          className="text-[30vw] font-goldman font-bold whitespace-nowrap outline-text leading-none"
+          className="text-[40vw] md:text-[30vw] font-goldman font-bold whitespace-nowrap outline-text leading-none opacity-5"
         >
           RESOLVED
         </motion.span>
@@ -30,9 +30,9 @@ export default function Hero() {
 
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 text-center px-4 w-full"
+        className="relative z-10 text-center w-full max-w-[100vw]"
       >
-        <div className="relative inline-block">
+        <div className="relative inline-block w-full max-w-fit px-4">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
@@ -43,7 +43,7 @@ export default function Hero() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-7xl md:text-[12rem] lg:text-[16rem] font-bold font-goldman text-white tracking-tighter leading-[0.8]"
+            className="text-4xl xs:text-5xl sm:text-7xl md:text-[12rem] lg:text-[16rem] font-bold font-goldman text-white tracking-tighter leading-[0.8] break-all md:break-normal"
           >
             RESOLVED
           </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="mt-24 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-24">
+        <div className="mt-12 md:mt-24 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-24">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -68,7 +68,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.8 }}
-            className="text-xl md:text-4xl text-white/50 font-opensans border-l-4 border-accent pl-6 py-2 uppercase tracking-widest"
+            className="text-lg xs:text-xl md:text-4xl text-white/50 font-opensans border-l-4 border-accent pl-6 py-2 uppercase tracking-widest"
           >
             Full-Stack <br /> Developer
           </motion.p>

@@ -11,6 +11,7 @@ html {
   --color-neutral: #2a2542;
   --font-goldman: "Goldman", serif;
   --font-opensans: "Open Sans", sans-serif;
+  --breakpoint-xs: 375px;
 }
 
 @layer utilities {
