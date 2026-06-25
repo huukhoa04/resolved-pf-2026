@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=UnifrakturMaguntia&family=IM+Fell+English:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import 'tailwindcss';
 
 html {
@@ -11,6 +11,9 @@ html {
   --color-neutral: #2a2542;
   --font-goldman: "Goldman", serif;
   --font-opensans: "Open Sans", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-imfell: "IM Fell English", serif;
+  --font-fraktur: "UnifrakturMaguntia", cursive;
   --breakpoint-xs: 375px;
 }
 
@@ -22,6 +25,24 @@ html {
   .outline-text {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
     color: transparent;
+  }
+  .newspaper-texture {
+    background-color: #f5f0e8;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23f5f0e8'/%3E%3Crect width='1' height='1' x='0' y='0' fill='%23e8e0cc' opacity='0.4'/%3E%3Crect width='1' height='1' x='2' y='2' fill='%23e8e0cc' opacity='0.3'/%3E%3C/svg%3E");
+  }
+  .drop-cap::first-letter {
+    float: left;
+    font-family: var(--font-playfair);
+    font-size: 5rem;
+    line-height: 0.75;
+    margin-right: 0.15em;
+    margin-top: 0.05em;
+    font-weight: 900;
+    color: #1a1208;
+  }
+  .column-rule {
+    column-rule: 1px solid #1a120830;
   }
 }
 
